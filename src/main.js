@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-Vue.config.productionTip = false
+// Initializers
+import '@/initializers/vee-validate'
+import i18n from '@/initializers/vue-i18n'
 
 new Vue({
-  render: h => h(App),
+  i18n,
+  render: (h) => h(App),
 }).$mount('#app')
