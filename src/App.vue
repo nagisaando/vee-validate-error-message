@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <ul>
       <li v-for="(item, index) in errors" :key="index">
         {{ `Error ${index + 1}: ${errorMessage(item[0])}` }}
@@ -67,6 +67,14 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 span {
   display: block;
   margin-top: 20px;
